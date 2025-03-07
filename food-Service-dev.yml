@@ -5,5 +5,5 @@ server:
 info:
   app:
     name: "Food Service"
-    description: "this is Food Service development"
+    description: "this is Food Service development GiTVersion"
     version: "1.0 Under Development"
