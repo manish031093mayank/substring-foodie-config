@@ -1,0 +1,8 @@
+server:
+  port: 9098
+
+info:
+  app:
+    name: "Food Service"
+    description: "this is Food Service serve the food for users"
+    version: "1.0 Under Production"

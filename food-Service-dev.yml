@@ -1,0 +1,9 @@
+server:
+  port: 9092
+
+#http://desktop-2f34l9q:9095/actuator/info for custom info
+info:
+  app:
+    name: "Food Service"
+    description: "this is Food Service development"
+    version: "1.0 Under Development"

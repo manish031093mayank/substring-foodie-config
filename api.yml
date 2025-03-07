@@ -1,0 +1,54 @@
+server:
+  port: 9095
+spring:
+  application:
+    name: api-gateway
+  #cofig the routes discovery client
+  cloud:
+    gateway:
+      #manual configuration
+      #      routes:
+      #        - id: food-Service
+      #          uri: lb://FOOD-SERVICE
+      #          predicates:
+      #            - Path=/foods/**
+      #          filters:
+      #            - RewritePath=/foods/?(?<remaining>.*) , /$\{remaining}
+      #
+      #        - id: restaurant-Service
+      #          uri: lb://restaurant-Service
+      #          predicates:
+      #            - Path=/restaurants/**
+      #          filters:
+      #            - RewritePath=/restaurants/?(?<remaining>.*) , /$\{remaining}
+
+      discovery:
+        locator:
+          enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#about actuator
+management:
+  endpoint:
+    gateway:
+      access: read_only
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+        ##http://desktop-2f34l9q:9095/actuator/info for custom info
+  info:
+    env:
+      enabled: true
+
+#http://desktop-2f34l9q:9095/actuator/info for custom info
+info:
+  app:
+    name: "api-gateway"
+    description: "this is api gateway for common entry point"
+    version: "1.0v"
