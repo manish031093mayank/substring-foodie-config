@@ -6,4 +6,5 @@ info:
   app:
     name: "Food Service."
     description: "this is Food Service development GiTVersion.keep on going developer"
-    version: "{cipher}bc9601b72b0e860fa43bfcf23a3a5303ab0dc2e09703d124bd764591c40c9996004f94c4a3ec7607fb17d24ff37c0328976b82b3150bcc9e443fe7eca2160162235bc81741e50bba5441d0b66781831b"
+    version: "1.0 Under Developement"
+    # version: "{cipher}bc9601b72b0e860fa43bfcf23a3a5303ab0dc2e09703d124bd764591c40c9996004f94c4a3ec7607fb17d24ff37c0328976b82b3150bcc9e443fe7eca2160162235bc81741e50bba5441d0b66781831b"
