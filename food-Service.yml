@@ -1,10 +1,11 @@
 spring:
-  application:
-    name: "food-Service"
+  # application:
+   # name: "food-Service"
   datasource:
     url: jdbc:mysql://localhost:3306/jb2404?allowPublicKeyRetrieval=true&useSSL=false
     username: root
-    password: "{cipher}60680b210f8aa313c55d0b2aab78ef127bd4e34cf8ff211c74b02baa2a7762d1"
+     password: root
+    # password: "{cipher}60680b210f8aa313c55d0b2aab78ef127bd4e34cf8ff211c74b02baa2a7762d1"
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -21,6 +22,9 @@ eureka:
    service-url.defaultZone: http://localhost:8761/eureka/
    register-with-eureka: true
    fetch-registry: true
+  instance:
+    hostname: localhost
+    prefer-ip-address: true 
 #Actutor
 
 management:
